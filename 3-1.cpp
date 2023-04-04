@@ -5,7 +5,6 @@
 //===== Space Complexity : O(1) =====//
 
 #include <iostream>
-#include <vector>
 using namespace std;
 
 void insertionSort(int arr[], int n){
@@ -22,8 +21,8 @@ void insertionSort(int arr[], int n){
         shifts++;
         arr[j+1]=key;
     }
-    for(int j =0; j<n; j++){
-        cout<<arr[j]<<" ";
+    for(int index =0; index<n; index++){
+        cout<<arr[index]<<" ";
     }
     cout<<endl;
     cout<<"comparisons = "<<comparisons<<endl;
