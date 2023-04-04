@@ -1,8 +1,8 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~Lalit-Dumka~~~~~~~~~~~~~~~~~~~~~~~~//
 //============ Check Duplicate using Sorting   ==============//
-// using quick sort because it is given the array is unsorted and quick sort have T.C. nlog(n) for unsorted array
+// using quick sort because it is given, the array is unsorted and quick sort have T.C. nlog(n) for unsorted array
 //============   Time Complexity : O(nLog(n))  =============//
-//============   Space Complexity : O(n)       =============//
+//============   Space Complexity : O(log(n))       =============//
 
 #include <iostream>
 using namespace std;
