@@ -40,7 +40,7 @@ void quickSort(int array[], int low, int high) {
 
 bool checkDuplicates(int arr[], int n){
     quickSort(arr,0, n-1);  
-    for(int i=1; i<n; i++){
+    for(int i=1; i<n; i++){  // n*log(n) + n = n*log(n)
         if(arr[i]==arr[i-1]){
             cout<<"YES"<<endl;
             return true;
