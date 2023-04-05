@@ -14,17 +14,19 @@ int min(int a, int b){
 
 int jumpSearch(vector<int> arr, int key){
     int comparisons = 0;
-    int step = sqrt(arr.size());
+    int step = 0;
     int prev = 0;
-    while (++comparisons && arr[min(step, arr.size()) - 1] < key) {
+    int k=0;
+    while (++comparisons && arr[min(step, arr.size()-1)] < key) {
       prev = step;
-      step += sqrt(arr.size());
+      k++;
+      step = pow(2,k);
       if (prev >= arr.size()){
         cout<<"Not Present "<<comparisons<<endl;
         return -1;
       }
     }
-    for (int i = prev; i < min(step, arr.size()); i++) {
+    for (int i = prev; i <= min(step, arr.size()-1); i++) {
       if ( arr[i] == key){
         cout<<"Present "<<comparisons<<endl;
         return i;
@@ -48,14 +50,11 @@ int main(){
         cin>>key;
         jumpSearch(arr,key);
     }
-    
-    
-    
     return 0;
 }
 /*
 output
-2
+3
 5
 12 23 36 39 41
 41
@@ -64,4 +63,8 @@ Present 3
 21 39 40 45 51 54 68 72
 69
 Not Present 4
+10
+101 246 438 561 796 896 899 4644 7999 8545
+7999
+Present 4
 */
