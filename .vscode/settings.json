@@ -6,6 +6,7 @@
         "bnanae",
         "camparison",
         "diya",
+        "enem",
         "funcn",
         "hoga",
         "iske",
@@ -16,5 +17,13 @@
         "neeche",
         "paas",
         "skte"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "queue": "cpp",
+        "ostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

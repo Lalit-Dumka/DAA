@@ -20,7 +20,7 @@ int jumpSearch(vector<int> arr, int key){
     while (++comparisons && arr[min(step, arr.size()-1)] < key) {
       prev = step;
       k++;
-      step = pow(2,k);
+      step = sqrt(size);
       if (prev >= arr.size()){
         cout<<"Not Present "<<comparisons<<endl;
         return -1;
