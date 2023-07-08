@@ -16,7 +16,7 @@ vector<vector<int>> floydWarshall(vector<vector<int>> graph){
         for(int j=0; j<v; j++){
             if(i==j)
                 dist[i][j]=0;
-            else if(graph[i][j]!=0)
+            else if(graph[i][j]!=0) // if there is a edge between i and j
                 dist[i][j]=graph[i][j];
         }
     }
